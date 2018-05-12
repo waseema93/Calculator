@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="waseem.wazik.projects.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="8dp"
+        android:gravity="bottom|right"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.503" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llbtn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.0">
+
+            <ImageButton
+                android:id="@+id/btnc"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/imgcan" />
+
+            <ImageButton
+                android:id="@+id/btncan"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/imgback"
+                android:text="@string/app_name" />
+
+            <ImageButton
+                android:id="@+id/btndiv"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/imgdiv" />
+
+            <ImageButton
+                android:id="@+id/btnmul"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/imgmul"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/btn7"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/img7"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btn8"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/img8"
+                android:text="8"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/btn9"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/img9"
+                android:text="9"
+                android:textSize="20sp" />
+
+
+            <ImageButton
+                android:id="@+id/btnadd"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/imgadd"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/llbtn1">
+
+            <ImageButton
+                android:id="@+id/btn4"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/img4"
+
+                />
+
+            <ImageButton
+                android:id="@+id/btn5"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/img5" />
+
+            <ImageButton
+                android:id="@+id/btn6"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/img6" />
+
+            <ImageButton
+                android:id="@+id/btnsub"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/imgsub" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llbtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/btn1"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/img1" />
+
+            <ImageButton
+                android:id="@+id/btn2"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/img2" />
+
+            <ImageButton
+                android:id="@+id/btn3"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/img3" />
+
+            <ImageButton
+                android:id="@+id/btnp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/imgper" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llbtn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:textColor="@android:color/darker_gray">
+
+            <ImageButton
+                android:id="@+id/btndot"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/imgdot"/>
+
+            <ImageButton
+                android:id="@+id/btn0"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:background="@drawable/back_border"
+                android:src="@drawable/img0" />
+
+            <ImageButton
+                android:id="@+id/btneq"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:background="@drawable/back_border"
+                android:src="@drawable/imgeq"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
